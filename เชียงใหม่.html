@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เชียงใหม่</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <nav>
+                <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+                <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+                <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+                <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                
+                    <h1>จังหวัดเชียงใหม่</h1>
+                    <p>เริ่มต้นเที่ยวเชียงใหม่กันสถานที่ที่เต็มไปด้วยศิลปะและวัฒนธรรมสไตล์ล้านนา คราคร่ำไปด้วยผู้คน 
+                        แต่ถึงอย่างนั้นก็ยังคงเป็นสถานที่พักผ่อนเชียงใหม่ยอดฮิตขวัญใจชาวสโลว์ไลฟ์หลาย ๆ คน และแน่นอนว่าเราจะต้องพาเพื่อน ๆ ไปเที่ยวย่านชิค ๆ เดินชิล ๆ ชมศิลปะแบบล้านนาร่วมสมัย และแวะไหว้พระเพื่อเป็นสิริมงคลประเดิมทริปที่เที่ยวเชียงใหม่ในครั้งนี้กันหน่อย อย่ามัวฮอช้า ไปผ่อกันเลยเจ้า <br>
+                        
+                        "วัดพระธาตุดอยสุเทพฯ" อีกหนึ่งแลนด์มาร์กสำคัญของจังหวัดเชียงใหม่ ใครที่มาเที่ยวเชียงใหม่แต่ไม่ได้มากราบไหว้ก็เหมือนมาไม่ถึง พร้อมกับเยี่ยมชมสถาปัตยกรรมแบบล้านนาจากการสร้างเจดีย์ทรงเชียงแสนและชื่นชมความงามของจังหวัดเชียงใหม่จากจุดชมวิวบนวัดพระธาตุดอยสุเทพฯแห่งนี้ 
+                        ลงจากดอยสุเทพมุ่งหน้าต่อไปที่เขตติดต่อแม่ริมยังมีอีกหนึ่งวัดให้สักการะขอพรกันอย่างเต็มที่ เชื่อได้เลยว่ากลับบ้านไปออร่าคนอิ่มบุญฟุ้งกระจายแน่นอน <br>
+                        
+                </div>
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Wat_Phra_That_Doi_Suthep_%28I%29.jpg" alt="Product 1">
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

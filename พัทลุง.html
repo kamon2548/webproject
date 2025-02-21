@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พัทลุง</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+    
+            <nav>
+                <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+                <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+                <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+                <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                   
+                    <h1>น้ำตกมโนราห์</h1>
+                    <p>น้ำตกมโนราห์ ตั้งอยู่ในเขตรักษาพันธุ์สัตว์ป่าเทือกเขาบรรทัด อำเภอกงหรา จังหวัดพัทลุง น้ำตกนี้มีทัศนียภาพที่สวยงามและบรรยากาศร่มรื่นด้วยแมกไม้นานาพรรณที่ขึ้นอยู่บริเวณโดยรอบ น้ำตกมโนราห์เป็นน้ำตกขนาดกลางที่มีน้ำใสสะอาดและกระแสน้ำไหลแรงกำลังดี
+
+                        กิจกรรมที่น่าสนใจที่น้ำตกมโนราห์ ได้แก่: <br>
+                        
+                        เล่นน้ำ: น้ำตกมโนราห์มีสไลด์เดอร์ธรรมชาติที่สร้างขึ้นจากเนินหิน ทำให้เหมือนสวนน้ำกลางป่า<br>
+
+
+                        เดินชมธรรมชาติ: มีสะพานแขวนที่สามารถเดินชมธรรมชาติรอบๆ น้ำตกได้<br>
+
+
+                        พักผ่อน: บรรยากาศเย็นสบายและสดชื่น เหมาะสำหรับการพักผ่อนและฟังเสียงธรรมชาติ<br>
+                </div>
+                <img src="https://roijang.com/wp-content/uploads/2022/07/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%81%E0%B8%A1%E0%B9%82%E0%B8%99%E0%B8%A3%E0%B8%B2%E0%B8%AB%E0%B9%8C-%E0%B8%9E%E0%B8%B1%E0%B8%97%E0%B8%A5%E0%B8%B8%E0%B8%87-1.jpg" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p> 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

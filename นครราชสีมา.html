@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>นครราชสีมา</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+       
+            <nav>
+                <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+                <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+                <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+                <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                
+                    <h1>อุทยานแห่งชาติเขาใหญ่</h1>
+                    <p>เขาใหญ่ เป็นอุทยานแห่งชาติแห่งแรกของประเทศไทย มีอาณาเขตครอบคลุม 11 อำเภอ ของ 4 จังหวัด คือ จังหวัดสระบุรี จังหวัดนครราชสีมา จังหวัดปราจีนบุรี และ จังหวัดนครนายก เป็นพื้นที่ป่าผืนใหญ่ตั้งอยู่ในเทือกเขาสันกำแพง มีความต่อเนื่องจากเทือกเขาดงพญาเย็นหรือดงพญาไฟในอดีต ประกอบด้วยขุนเขาน้อยใหญ่สลับซับซ้อนหลายลูก เป็นแหล่งกำเนิดของต้นน้ำลำธารที่สำคัญหลายสาย เช่น แม่น้ำนครนายก และแม่น้ำมูล อุดมสมบูรณ์ไปด้วยพันธุ์ไม้และสัตว์ป่านานาชนิด เช่น ช้างป่า กวางป่า เก้ง กระทิง เสือ ตลอดจนมีลักษณะทางธรรมชาติที่สวยงาม
+                        รวมทั้งวิวที่สวยงามระหว่างทางสามารถจอดแวะเที่ยวได้ตลอดเส้นทาง ยังมีสิ่งอำนวยความสะดวกค่อนข้างครบ ทั้งร้านอาหาร ลานกางเต้นท์หลายจุดสำหรับสายชอบแคมป์ปิ้งอีกด้วย  เขาใหญ่ ไม่ใช่แค่การท่องเที่ยวธรรมดา แต่เป็นการปลุกความสดชื่นให้กับชีวิต
+                </div>
+                <img src="https://mpics-cdn.mgronline.com/pics/Images/564000010482201.JPEG" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p> 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

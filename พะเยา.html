@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พะเยา</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+                <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+                <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+                <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>กว๊านพะเยา</h1>
+                    <p>เป็นทะเลสาบน้ำจืดใหญ่ที่สุดในภาคเหนือ คำว่า "กว๊าน" ตามภาษาพื้นเมืองหมายถึง "บึง" เกิดขึ้นจากกรมประมงได้ทำประตูกั้นน้ำไว้เพื่อให้ราษฎรมีน้ำใช้ในฤดูแล้ง 
+                    และในฤดูฝนก็กั้นไม่ให้น้ำไหลแรงไปท่วมเรือกสวนไร่นาที่อยู่ปลายน้ำ ตั้งอยู่ใจกลางเมืองพะเยา มีทิวเขาเป็นฉากหลัง เกิดจากน้ำที่ไหลมาจากห้วยต่างๆ 18 สาย 
+                    มีปริมาณน้ำเฉลี่ยปีละ 29.40 ล้านลูกบาศก์เมตร มีพันธุ์ปลาน้ำจืดถึง 45 ชนิด ใน 17 วงศ์[1] มีเนื้อที่ 12,831 ไร่ หรือ (20.529 ตารางกิโลเมตร) เป็นแหล่งเพาะพันธุ์ปลาต่างๆ ทัศนียภาพโดยรอบกว๊านพะเยา มีส่วน ทำให้เป็นสถานที่ท่องเที่ยวตามธรรมชาติ ที่สวยงามประทับใจผู้พบเห็น จนอาจจะกล่าวได้ว่าหัวใจของเมืองพะเยาอยู่ที่กว๊านพะเยา และด้วยความสมบูรณ์ของพันธุ์ปลาที่กว๊านพะเยา ทำให้เป็นแหล่งที่ผลิตปลาส้มรายใหญ่และขึ้นชื่อ จนกลายเป็นสินค้าที่มีชื่อเสียงของจังหวัดพะเยา
+                    
+                        
+                </div>
+                <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5yCh11ByQ6JOCN7q5YK2tqdwCGDp418UmCC3dnYRye3AbaaqHoz.webp" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p> 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาคกลาง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f; 
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        .product-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            white-space: nowrap;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            max-width: 80%; /* ป้องกันไม่ให้กว้างเกินไป */
+         margin: 0 auto; /* จัดให้อยู่กึ่งกลางของหน้า */
+        }
+        .product {
+            width: 200px;
+            text-align: center;
+            flex: 0 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .history {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background-color: #333; 
+            color: wh
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+            <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+            <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+            <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+        </nav>
+    </header>
+    <style>
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #home img {
+            max-width: 600%;
+            max-height: 600%;
+        }
+    </style>
+    <div class="section-title"><h3>จังหวัดแนะนำ</h3> <h5>คลิกรูปเพื่อดูรายละเอียด</h5></div>
+    <div class="product-container">
+        <div class="product">
+            <a href="นครปฐม.html">
+                <img src="https://s359.kapook.com//pagebuilder/c258ffbb-c1e1-4830-998f-a2ef343cb480.jpg" alt="Product 1">
+                <p>นครปฐม</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="นครนายก.html">
+                <img src="https://s359.kapook.com//pagebuilder/3f887ab7-b90f-4554-967c-3dcaabac46f9.jpg" alt="Product 2">
+                <p>นครนายก</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="ลพบุรี.html">
+                <img src="https://ik.imagekit.io/tvlk/blog/2022/01/06.-Pa-Sak-Jolasid-Dam.jpg?tr=q-70,c-at_max,w-500,h-300,dpr-2" alt="Product 3">
+                <p>ลพบุรี</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="สมุทรสงคราม.html">
+                <img src="https://ik.imagekit.io/tvlk/blog/2022/01/15.-Amphawa-Floating-Market.jpg?tr=q-70,c-at_max,w-500,h-300,dpr-2" alt="Product 4">
+                <p>สมุทรสงคราม</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="เพชรบูรณ์.html">
+                <img src="https://s359.kapook.com//pagebuilder/ed1c9ee6-2e8d-469c-b5d9-6d0345b147dd.jpg" alt="Product 5">
+                <p>เพชรบูรณ์</p>
+            </a>
+        </div>
+    </div>
+    </div>
+    <main>
+        
+    
+        <style>
+            .container {
+                text-align: center;
+            }
+    
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+    
+            .vertical-layout {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+    
+            .vertical-item {
+                text-align: center;
+                max-width: 600px;
+            }
+    
+            .vertical-item img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .vertical-item h2 {
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+    
+            .vertical-item p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </main>
+    
+
+    <footer>
+        <p> 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+    </footer>
+   
+
+</body>
+</html>

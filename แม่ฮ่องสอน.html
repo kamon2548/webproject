@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แม่ฮ่องสอน</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+                <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+                <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+                <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                    <h1>บ้านรักไทย</h1>
+                    <p>บ้านรักไทย เป็นหมู่บ้านที่ตั้งอยู่บนดอยสูงในจังหวัดแม่ฮ่องสอน ห่างจากตัวเมืองแม่ฮ่องสอนประมาณ 44 กิโลเมตร 
+
+                        ในช่วงใกล้หน้าหนาวแบบนี้ หากจะถามถึงหนึ่งแหล่งท่องเที่ยวที่นักเดินทางอยากจะไปเยือนกันมากที่สุด หนึ่งในนั้นจะต้องมีชื่อของ บ้านรักไทย แม่ฮ่องสอน อยู่แน่นอน หมู่บ้านชาวไทยเชื้อสายจีนยูนนานแห่งนี้ ได้รับความนิยมเป็นอย่างมากสำหรับนักท่องเที่ยวในช่วงหลายปีที่ผ่านมา
+                     <br> หมู่บ้านรักไทย ตั้งอยู่ท่ามกลางหุบเขา ในเขตอำเภอเมืองแม่ฮ่องสอน ความพิเศษที่เป็นเอกลักษณ์ของหมู่บ้านแห่งนี้คือมีทะเลสาบขนาดใหญ่อยู่ตรงกลางหมู่บ้าน ซึ่งถือเป็นแลนด์มาร์คของที่นี่เลยในช่วงเช้านั้น จะมีสายหมอกที่ลอยละล่องอยู่เหนือผิวน้ำ เป็นภาพบรรยากาศสุดแสนโรแมนติก ซึ่งถือเป็นภาพในฝันของหลายๆ คนเลยก็ว่าได้
+
+                     ภายในหมู่บ้านรักไทย แม่ฮ่องสอน จะมีทั้งที่พักและร้านอาหาร รวมถึงร้านขายของมากมาย ในสไตล์จีนยูนนาน เรียกได้ว่าเข้าไปที่นี่จะเหมือนคุณหลุดเข้าไปในเมืองจีนเลยก็ว่าได้ เป็นเสน่ห์ของหมู่บ้านรักไทยที่ทำให้หลายคนชื่นชอบ
+                    
+                       
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSpF5TAWjQmwJLEkhRq3krAzqm2Q72Gt7NBKD27eMMiedBgm29ar6EtZWGEg6TObrnbV_cz6b64I0WiNvaRgAO5dgr8jdd_P80nxWJE1g" alt="Product 3">
+            </div>
+        </div>
+
+        <footer>
+            <p> 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เพชรบูรณ์</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product-details img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+        }
+
+        .product-text h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .product-details {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .product-details img {
+                max-width: 80%;
+            }
+
+            .product-text {
+                max-width: 90%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <nav>
+                <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+                <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+                <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+                <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+                <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="product-details">
+                <div class="product-text">
+                   
+                    <h1>ภูทับเบิก</h1>
+                    <p> สถานที่ท่องเที่ยวยอดฮิตที่ได้รับความนิยมจากบรรดานักท่องเที่ยวสายธรรมชาติ โดยเฉพาะในช่วงหน้าฝนและหน้าหนาว ซึ่งมีไฮไลต์ที่ไม่ควรพลาดนั่นก็คือ "ทะเลหมอก" ให้ได้สัมผัสความสวยงามอย่างใกล้ชิด
+
+                        ภูทับเบิก ตั้งอยู่ในตำบลวังบาล อำเภอหล่มเก่า จังหวัดเพชรบูรณ์ ซึ่งเป็นยอดเขาที่สูงที่สุดของเพชรบูรณ์ มีความสูงจากระดับน้ำทะเล 1,768 เมตร เป็นสถานที่ท่องเที่ยวที่ได้รับความนิยม เนื่องจากบนภูทับเบิกมีอากาศหนาวเย็นตลอดทั้งปี ในช่วงฤดูฝน-ฤดูหนาว ก็ยังมีทะเลหมอกขาวโพลนเป็นจุดไฮไลต์ที่ดึงดูดนักท่องเที่ยวให้ขึ้นไปชมความงดงามของธรรมชาติ<br>
+
+                        ภูทับเบิกยังมีฉายาว่า "ดาวบนดิน" เนื่องจากเมื่อขึ้นไปยังบนยอดภูทับเบิก แล้วมองลงมายังเบื้องล่างในยามค่ำคืน ก็จะเห็นบ้านเรือนประชาชนที่มีแสงไฟ ดูคล้ายแสงดาวระยิบระยับ เป็นภาพที่นักท่องเที่ยวต่างประทับใจ ส่วนในเวลากลางวันก็มีวิถีชีวิตชาวเขาให้ได้สัมผัสอย่างใกล้ชิด มีบ้านพักและจุดชมวิว รวมถึงจุดบริการนักท่องเที่ยว ร้านค้าและคาเฟ่ต่างๆ <br>
+                </div>
+                <img src="https://s359.kapook.com//pagebuilder/ed1c9ee6-2e8d-469c-b5d9-6d0345b147dd.jpg" alt="Product 5">
+            </div>
+        </div>
+
+        <footer>
+            <p> 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+

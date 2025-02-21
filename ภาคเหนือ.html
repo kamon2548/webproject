@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาคเหนือ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8f8f8f; 
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        nav button:hover {
+            background-color: white;
+            color: #333;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* สไตล์ของ Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        .product-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            white-space: nowrap;
+            justify-content: center; /* จัดให้อยู่ตรงกลาง */
+            max-width: 80%; /* ป้องกันไม่ให้กว้างเกินไป */
+         margin: 0 auto; /* จัดให้อยู่กึ่งกลางของหน้า */
+        }
+        .product {
+            width: 200px;
+            text-align: center;
+            flex: 0 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .history {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            background-color: #333; 
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <button onclick="window.location.href='แอ่วกั๋นเต๊อะ.html'">หน้าหลัก</button>
+            <button onclick="window.location.href='ภาคเหนือ.html'">ภาคเหนือ</button>
+            <button onclick="window.location.href='ภาคกลาง.html'">ภาคกลาง</button>
+            <button onclick="window.location.href='ภาคอีสาน.html'">ภาคอีสาน</button>
+            <button onclick="window.location.href='ภาคใต้.html'">ภาคใต้</button>
+        </nav>
+    </header>
+    
+    <style>
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #home img {
+            max-width: 600%;
+            max-height: 600%;
+        }
+    </style>
+    <div class="section-title"><h3>จังหวัดแนะนำ</h3> <h5>คลิกรูปเพื่อดูรายละเอียด</h5></div>
+    <div class="product-container">
+        <div class="product">
+            <a href="เชียงใหม่.html">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQ41sMdQUrmUgIbtcDBNIDcNkeZCG5Nup6iAcnP4yMXgyjocw7qCORJkjlqBUPvy8rKUCt1usDGji3fD7BkbDATNdbfSSR3ghtVpZxGog" alt="Product 1">
+                <p>เชียงใหม่</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="เชียงราย.html">
+                <img src="https://img.wongnai.com/p/800x0/2021/01/05/2a926f0b160b4f4bb24fc501dc850d99.jpg" alt="Product 2">
+                <p>เชียงราย</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="แม่ฮ่องสอน.html">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSpF5TAWjQmwJLEkhRq3krAzqm2Q72Gt7NBKD27eMMiedBgm29ar6EtZWGEg6TObrnbV_cz6b64I0WiNvaRgAO5dgr8jdd_P80nxWJE1g" alt="Product 3">
+                <p>แม่ฮ่องสอน</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="น่าน.html">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPlLy-Wvah6aM6DN9XrZlwQ0zGY5Qc2azJyK0YE=w675-h390-n-k-no" alt="Product 4">
+                <p>น่าน</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="พะเยา.html">
+                <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5yCh11ByQ6JOCN7q5YK2tqdwCGDp418UmCC3dnYRye3AbaaqHoz.webp" alt="Product 4">
+                <p>พะเยา</p>
+            </a>
+        </div>
+    </div>
+    </div>
+    <main>
+               
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> 2025 แอ่วกั๋นเต๊อะ. All Rights Reserved.</p>
+    </footer>
+    <!-- Popup Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="สินค้า">
+        <p id="modalText"></p>
+    </div>
+</div>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".product img").forEach((img, index) => {
+        img.addEventListener("click", function () {
+            window.location.href = "product" + (index + 1) + ".html"; // เปิดหน้าใหม่ตามลำดับสินค้า
+        });
+    });
+});
+
+
+    </script>
+    
+
+</body>
+</html>
